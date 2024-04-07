@@ -144,5 +144,10 @@ namespace ProjectInventory
         {
 
         }
+
+        private void ParentPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

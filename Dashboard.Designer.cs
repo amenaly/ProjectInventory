@@ -70,8 +70,9 @@
             this.SideMenu.Controls.Add(this.LogOnPanel);
             this.SideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.SideMenu.Location = new System.Drawing.Point(0, 0);
+            this.SideMenu.Margin = new System.Windows.Forms.Padding(1);
             this.SideMenu.Name = "SideMenu";
-            this.SideMenu.Size = new System.Drawing.Size(483, 1641);
+            this.SideMenu.Size = new System.Drawing.Size(181, 554);
             this.SideMenu.TabIndex = 0;
             // 
             // LogOffButton
@@ -79,9 +80,10 @@
             this.LogOffButton.BackColor = System.Drawing.Color.IndianRed;
             this.LogOffButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.LogOffButton.ForeColor = System.Drawing.Color.White;
-            this.LogOffButton.Location = new System.Drawing.Point(0, 1461);
+            this.LogOffButton.Location = new System.Drawing.Point(0, 612);
+            this.LogOffButton.Margin = new System.Windows.Forms.Padding(1);
             this.LogOffButton.Name = "LogOffButton";
-            this.LogOffButton.Size = new System.Drawing.Size(483, 121);
+            this.LogOffButton.Size = new System.Drawing.Size(181, 51);
             this.LogOffButton.TabIndex = 5;
             this.LogOffButton.Text = "Logoff";
             this.LogOffButton.UseVisualStyleBackColor = false;
@@ -93,9 +95,10 @@
             this.ReportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ReportButton.Image = ((System.Drawing.Image)(resources.GetObject("ReportButton.Image")));
             this.ReportButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ReportButton.Location = new System.Drawing.Point(0, 1340);
+            this.ReportButton.Location = new System.Drawing.Point(0, 561);
+            this.ReportButton.Margin = new System.Windows.Forms.Padding(1);
             this.ReportButton.Name = "ReportButton";
-            this.ReportButton.Size = new System.Drawing.Size(483, 121);
+            this.ReportButton.Size = new System.Drawing.Size(181, 51);
             this.ReportButton.TabIndex = 4;
             this.ReportButton.Text = "Reports";
             this.ReportButton.UseVisualStyleBackColor = true;
@@ -107,9 +110,10 @@
             this.CurrentPanel.Controls.Add(this.PendingButton);
             this.CurrentPanel.Controls.Add(this.AddButton);
             this.CurrentPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.CurrentPanel.Location = new System.Drawing.Point(0, 978);
+            this.CurrentPanel.Location = new System.Drawing.Point(0, 409);
+            this.CurrentPanel.Margin = new System.Windows.Forms.Padding(1);
             this.CurrentPanel.Name = "CurrentPanel";
-            this.CurrentPanel.Size = new System.Drawing.Size(483, 362);
+            this.CurrentPanel.Size = new System.Drawing.Size(181, 152);
             this.CurrentPanel.TabIndex = 3;
             // 
             // AvailableButton
@@ -119,9 +123,10 @@
             this.AvailableButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AvailableButton.Image = ((System.Drawing.Image)(resources.GetObject("AvailableButton.Image")));
             this.AvailableButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AvailableButton.Location = new System.Drawing.Point(0, 242);
+            this.AvailableButton.Location = new System.Drawing.Point(0, 102);
+            this.AvailableButton.Margin = new System.Windows.Forms.Padding(1);
             this.AvailableButton.Name = "AvailableButton";
-            this.AvailableButton.Size = new System.Drawing.Size(483, 121);
+            this.AvailableButton.Size = new System.Drawing.Size(181, 51);
             this.AvailableButton.TabIndex = 6;
             this.AvailableButton.Text = "Available Stock";
             this.AvailableButton.UseVisualStyleBackColor = false;
@@ -134,9 +139,10 @@
             this.PendingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PendingButton.Image = ((System.Drawing.Image)(resources.GetObject("PendingButton.Image")));
             this.PendingButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.PendingButton.Location = new System.Drawing.Point(0, 121);
+            this.PendingButton.Location = new System.Drawing.Point(0, 51);
+            this.PendingButton.Margin = new System.Windows.Forms.Padding(1);
             this.PendingButton.Name = "PendingButton";
-            this.PendingButton.Size = new System.Drawing.Size(483, 121);
+            this.PendingButton.Size = new System.Drawing.Size(181, 51);
             this.PendingButton.TabIndex = 5;
             this.PendingButton.Text = "Pending Orders";
             this.PendingButton.UseVisualStyleBackColor = false;
@@ -150,8 +156,9 @@
             this.AddButton.Image = ((System.Drawing.Image)(resources.GetObject("AddButton.Image")));
             this.AddButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AddButton.Location = new System.Drawing.Point(0, 0);
+            this.AddButton.Margin = new System.Windows.Forms.Padding(1);
             this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(483, 121);
+            this.AddButton.Size = new System.Drawing.Size(181, 51);
             this.AddButton.TabIndex = 4;
             this.AddButton.Text = "Add Order";
             this.AddButton.UseVisualStyleBackColor = false;
@@ -163,9 +170,10 @@
             this.CurrentButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CurrentButton.Image = ((System.Drawing.Image)(resources.GetObject("CurrentButton.Image")));
             this.CurrentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CurrentButton.Location = new System.Drawing.Point(0, 851);
+            this.CurrentButton.Location = new System.Drawing.Point(0, 356);
+            this.CurrentButton.Margin = new System.Windows.Forms.Padding(1);
             this.CurrentButton.Name = "CurrentButton";
-            this.CurrentButton.Size = new System.Drawing.Size(483, 127);
+            this.CurrentButton.Size = new System.Drawing.Size(181, 53);
             this.CurrentButton.TabIndex = 3;
             this.CurrentButton.Text = "Current Stock";
             this.CurrentButton.UseVisualStyleBackColor = true;
@@ -176,9 +184,10 @@
             this.ProductsPanel.Controls.Add(this.SupplierButton);
             this.ProductsPanel.Controls.Add(this.Skewbutton);
             this.ProductsPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ProductsPanel.Location = new System.Drawing.Point(0, 595);
+            this.ProductsPanel.Location = new System.Drawing.Point(0, 249);
+            this.ProductsPanel.Margin = new System.Windows.Forms.Padding(1);
             this.ProductsPanel.Name = "ProductsPanel";
-            this.ProductsPanel.Size = new System.Drawing.Size(483, 256);
+            this.ProductsPanel.Size = new System.Drawing.Size(181, 107);
             this.ProductsPanel.TabIndex = 2;
             // 
             // SupplierButton
@@ -188,9 +197,10 @@
             this.SupplierButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SupplierButton.Image = ((System.Drawing.Image)(resources.GetObject("SupplierButton.Image")));
             this.SupplierButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SupplierButton.Location = new System.Drawing.Point(0, 127);
+            this.SupplierButton.Location = new System.Drawing.Point(0, 53);
+            this.SupplierButton.Margin = new System.Windows.Forms.Padding(1);
             this.SupplierButton.Name = "SupplierButton";
-            this.SupplierButton.Size = new System.Drawing.Size(483, 127);
+            this.SupplierButton.Size = new System.Drawing.Size(181, 53);
             this.SupplierButton.TabIndex = 1;
             this.SupplierButton.Text = "Suppliers";
             this.SupplierButton.UseVisualStyleBackColor = false;
@@ -204,8 +214,9 @@
             this.Skewbutton.Image = ((System.Drawing.Image)(resources.GetObject("Skewbutton.Image")));
             this.Skewbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Skewbutton.Location = new System.Drawing.Point(0, 0);
+            this.Skewbutton.Margin = new System.Windows.Forms.Padding(1);
             this.Skewbutton.Name = "Skewbutton";
-            this.Skewbutton.Size = new System.Drawing.Size(483, 127);
+            this.Skewbutton.Size = new System.Drawing.Size(181, 53);
             this.Skewbutton.TabIndex = 0;
             this.Skewbutton.Text = "Skew";
             this.Skewbutton.UseVisualStyleBackColor = false;
@@ -217,9 +228,10 @@
             this.ProductButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ProductButton.Image = ((System.Drawing.Image)(resources.GetObject("ProductButton.Image")));
             this.ProductButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ProductButton.Location = new System.Drawing.Point(0, 468);
+            this.ProductButton.Location = new System.Drawing.Point(0, 196);
+            this.ProductButton.Margin = new System.Windows.Forms.Padding(1);
             this.ProductButton.Name = "ProductButton";
-            this.ProductButton.Size = new System.Drawing.Size(483, 127);
+            this.ProductButton.Size = new System.Drawing.Size(181, 53);
             this.ProductButton.TabIndex = 2;
             this.ProductButton.Text = "Products";
             this.ProductButton.UseVisualStyleBackColor = true;
@@ -231,9 +243,10 @@
             this.HomeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.HomeButton.Image = ((System.Drawing.Image)(resources.GetObject("HomeButton.Image")));
             this.HomeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.HomeButton.Location = new System.Drawing.Point(0, 341);
+            this.HomeButton.Location = new System.Drawing.Point(0, 143);
+            this.HomeButton.Margin = new System.Windows.Forms.Padding(1);
             this.HomeButton.Name = "HomeButton";
-            this.HomeButton.Size = new System.Drawing.Size(483, 127);
+            this.HomeButton.Size = new System.Drawing.Size(181, 53);
             this.HomeButton.TabIndex = 1;
             this.HomeButton.Text = "Home";
             this.HomeButton.UseVisualStyleBackColor = true;
@@ -245,17 +258,19 @@
             this.LogOnPanel.Controls.Add(this.pictureBox1);
             this.LogOnPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.LogOnPanel.Location = new System.Drawing.Point(0, 0);
+            this.LogOnPanel.Margin = new System.Windows.Forms.Padding(1);
             this.LogOnPanel.Name = "LogOnPanel";
-            this.LogOnPanel.Size = new System.Drawing.Size(483, 341);
+            this.LogOnPanel.Size = new System.Drawing.Size(181, 143);
             this.LogOnPanel.TabIndex = 0;
             this.LogOnPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.LogOnPanel_Paint);
             // 
             // usernamelabel
             // 
             this.usernamelabel.AutoSize = true;
-            this.usernamelabel.Location = new System.Drawing.Point(157, 279);
+            this.usernamelabel.Location = new System.Drawing.Point(59, 117);
+            this.usernamelabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.usernamelabel.Name = "usernamelabel";
-            this.usernamelabel.Size = new System.Drawing.Size(144, 32);
+            this.usernamelabel.Size = new System.Drawing.Size(55, 13);
             this.usernamelabel.TabIndex = 2;
             this.usernamelabel.Text = "Username";
             this.usernamelabel.Click += new System.EventHandler(this.usernamelabel_Click);
@@ -263,7 +278,8 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(153, 47);
+            this.pictureBox1.Location = new System.Drawing.Point(57, 20);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(70, 70);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -273,9 +289,11 @@
             // NameLabel
             // 
             this.NameLabel.AutoSize = true;
-            this.NameLabel.Location = new System.Drawing.Point(81, 85);
+            this.NameLabel.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameLabel.Location = new System.Drawing.Point(479, 23);
+            this.NameLabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.NameLabel.Name = "NameLabel";
-            this.NameLabel.Size = new System.Drawing.Size(46, 32);
+            this.NameLabel.Size = new System.Drawing.Size(32, 22);
             this.NameLabel.TabIndex = 1;
             this.NameLabel.Text = "Ln";
             this.NameLabel.Click += new System.EventHandler(this.label1_Click);
@@ -286,38 +304,43 @@
             this.TitlePane.Controls.Add(this.TitleMessage);
             this.TitlePane.Controls.Add(this.NameLabel);
             this.TitlePane.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TitlePane.Location = new System.Drawing.Point(483, 0);
+            this.TitlePane.Location = new System.Drawing.Point(181, 0);
+            this.TitlePane.Margin = new System.Windows.Forms.Padding(1);
             this.TitlePane.Name = "TitlePane";
-            this.TitlePane.Size = new System.Drawing.Size(1775, 163);
+            this.TitlePane.Size = new System.Drawing.Size(666, 68);
             this.TitlePane.TabIndex = 1;
             // 
             // TitleMessage
             // 
             this.TitleMessage.AutoSize = true;
             this.TitleMessage.Font = new System.Drawing.Font("Times New Roman", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TitleMessage.Location = new System.Drawing.Point(949, 56);
+            this.TitleMessage.Location = new System.Drawing.Point(307, 23);
+            this.TitleMessage.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.TitleMessage.Name = "TitleMessage";
-            this.TitleMessage.Size = new System.Drawing.Size(286, 53);
+            this.TitleMessage.Size = new System.Drawing.Size(151, 22);
             this.TitleMessage.TabIndex = 0;
-            this.TitleMessage.Text = "TitleMessage";
+            this.TitleMessage.Text = "Good Afternoon, ";
             this.TitleMessage.Click += new System.EventHandler(this.TitleMessage_Click);
             // 
             // ParentPanel
             // 
             this.ParentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ParentPanel.Location = new System.Drawing.Point(483, 163);
+            this.ParentPanel.Location = new System.Drawing.Point(181, 68);
+            this.ParentPanel.Margin = new System.Windows.Forms.Padding(1);
             this.ParentPanel.Name = "ParentPanel";
-            this.ParentPanel.Size = new System.Drawing.Size(1775, 1478);
+            this.ParentPanel.Size = new System.Drawing.Size(666, 486);
             this.ParentPanel.TabIndex = 2;
+            this.ParentPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ParentPanel_Paint);
             // 
             // DashboardMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2258, 1641);
+            this.ClientSize = new System.Drawing.Size(847, 554);
             this.Controls.Add(this.ParentPanel);
             this.Controls.Add(this.TitlePane);
             this.Controls.Add(this.SideMenu);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "DashboardMenu";
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.DashboardMenu_Load);

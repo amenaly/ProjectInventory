@@ -14,13 +14,13 @@ namespace ProjectInventory
 {
     public partial class CurrentStock : Form
     {
-        
+
         //Database connection
-        SqlConnection con = new SqlConnection(@"Data Source=d0;Initial Catalog=InventoryDB;Integrated Security=True;Encrypt=False");
+        //SqlConnection con = new SqlConnection(@"Data Source=d0;Initial Catalog=InventoryDB;Integrated Security=True;Encrypt=False");
+        SqlConnection con = new SqlConnection(@"Data Source=BB8\SQLEXPRESS;Initial Catalog=InventoryDB;Integrated Security=True;Encrypt=False");
         SqlCommand cmd = new SqlCommand();
         SqlDataReader dr;
         int _qty;
-
 
         public CurrentStock()
         {
@@ -45,7 +45,9 @@ namespace ProjectInventory
                 //Open the connection
                 con.Open();
                 //allow search txt too and calls from Database
-                cmd = new SqlCommand("SELECT * FROM Stock WHERE product_name LIKE '%" + SearchtxtBox.Text + "%' OR skew_number LIKE '%" + SearchtxtBox.Text + "%' OR p_desc LIKE '%" + SearchtxtBox.Text + "%'", con);
+                cmd = new SqlCommand("SELECT * FROM Stock WHERE product_name LIKE '%" + SearchtxtBox.Text + "%' " +
+                    "OR skew_number LIKE '%" + SearchtxtBox.Text + "%' OR p_desc LIKE '%" + 
+                    SearchtxtBox.Text + "%'", con);
                 dr = cmd.ExecuteReader();
                 int i = 0;
 
@@ -54,8 +56,10 @@ namespace ProjectInventory
                 {
                     i++;
                     //Display the stock details in the datagridview
-                    dgvStock.Rows.Add(dr["st_product_id"].ToString(), dr["supp_id"].ToString(), dr["skew_number"].ToString(),
-                        dr["product_name"].ToString(), dr["p_desc"].ToString(), dr["quantity"].ToString());
+                    dgvStock.Rows.Add(dr["st_product_id"].ToString(), dr["supp_id"].ToString(),
+                        dr["skew_number"].ToString(),
+                        dr["product_name"].ToString(),
+                        dr["p_desc"].ToString(), dr["quantity"].ToString());
                 }
 
                 dr.Close();
@@ -121,6 +125,21 @@ namespace ProjectInventory
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void IDlabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void productidlabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SkewNumLabel_Click(object sender, EventArgs e)
         {
 
         }

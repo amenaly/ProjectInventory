@@ -16,7 +16,7 @@ namespace ProjectInventory
     public partial class LogForm : Form
     {
         //Database connection
-        SqlConnection con = new SqlConnection(@"Data Source=d0;Initial Catalog=InventoryDB;Integrated Security=True;Encrypt=False");
+        SqlConnection con = new SqlConnection(@"Data Source=BB8\SQLEXPRESS;Initial Catalog=InventoryDB;Integrated Security=True;Encrypt=False");
         SqlDataReader dr;
 
 
