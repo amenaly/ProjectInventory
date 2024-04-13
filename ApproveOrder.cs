@@ -118,6 +118,9 @@ namespace ProjectInventory
                     cmd.Parameters.AddWithValue("@approval_date", ApprovalPicker.Value);
                     cmd.ExecuteNonQuery();
 
+                    //NEED TO DO: Update the stock quantity in the database Stock table
+                    //Get the current stock quantity
+
                     //delete the selected row
                     cmd = new SqlCommand("DELETE FROM PendingOrders WHERE order_id = @order_id", con);
                     cmd.Parameters.AddWithValue("@order_id", dgvPending.Rows[e.RowIndex].Cells[0].Value);
