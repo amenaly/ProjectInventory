@@ -117,37 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAAAddJREFUSEvt17lLHGEch/FVMZVFQLEwRxXFTjuPtDZJrYkEFCSS3gMP0F4xpY0H
-        sfFvEG1CIJV2RoVEMKBNSBPQKgeiz7M7A7O77rrHbKr5woe88x6/1+y+78CmSkgn3mETn3CBX/gXsH0O
-        x5zjXNdUlCZM4QQ3+IoPmMUgBtATsG2fY85xrmuOYQ1rlZRX+IEzzOAxyo1r/EOsYa0hFM0Efgf/NtpR
-        ZR7A/3VY88504w9epJ/ijTWt3ZV+yskydjPNmsTaS5lmdtZQy4334B55sfMatfioX8LaBTf2BPpdeCA8
-        GNXGGtOwprULbiyPfnidvBJPUG6eYg7hdfKeh/XzEh0IXyBH8GXwDVuw2Gv40ugN2B7GPJxzCtd8wSTC
-        F0hJG0fTgXFs4CO+w9fk34Bt+xxbx1u0IzdFN05OdbVJTvW9G0eTnOpKkpzqrEQH/uupXsV2ppmVuE61
-        td0jL6P4iZb0U7yxprVH0k85acBn7KPNjpjyCAewdr0dd+UhvG+XWEArKo1rF3EFa1q7aOrwBh4ov8Md
-        eND60IxCccw5Xh/XuNYa1rJmWXmO9/Cj8neSp9VPw2tyGLBtn2PO8ataQT9iib8snsHr410fC9i2z7ES
-        f32kUrcmfsdi+yo/6wAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <metadata name="Avail_Qty.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
+  <metadata name="requisition_approvalTableAdapter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
-  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
+  <metadata name="requisition_approvalTableAdapter2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>564, 17</value>
   </metadata>
 </root>

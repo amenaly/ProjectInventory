@@ -117,7 +117,8 @@ namespace ProjectInventory
 
         private void ReportButton_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new Reports());
+            hideSubMenu();
         }
 
         private void LogOffButton_Click(object sender, EventArgs e)
@@ -146,6 +147,11 @@ namespace ProjectInventory
         }
 
         private void ParentPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void TitlePane_Paint(object sender, PaintEventArgs e)
         {
 
         }

@@ -49,6 +49,7 @@
             this.Productbox = new System.Windows.Forms.TextBox();
             this.skewlabel = new System.Windows.Forms.Label();
             this.skewdroplabel = new System.Windows.Forms.Label();
+            this.Editbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.qtynumchoice)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,20 +57,19 @@
             // 
             this.Supplierbox.Font = new System.Drawing.Font("Times New Roman", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Supplierbox.FormattingEnabled = true;
-            this.Supplierbox.Location = new System.Drawing.Point(113, 190);
-            this.Supplierbox.Margin = new System.Windows.Forms.Padding(1);
+            this.Supplierbox.Location = new System.Drawing.Point(301, 453);
+            this.Supplierbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Supplierbox.Name = "Supplierbox";
-            this.Supplierbox.Size = new System.Drawing.Size(186, 29);
+            this.Supplierbox.Size = new System.Drawing.Size(489, 61);
             this.Supplierbox.TabIndex = 23;
             this.Supplierbox.SelectedIndexChanged += new System.EventHandler(this.Supplierbox_SelectedIndexChanged);
             // 
             // SupplierLabel
             // 
             this.SupplierLabel.Font = new System.Drawing.Font("Times New Roman", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SupplierLabel.Location = new System.Drawing.Point(28, 197);
-            this.SupplierLabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.SupplierLabel.Location = new System.Drawing.Point(75, 470);
             this.SupplierLabel.Name = "SupplierLabel";
-            this.SupplierLabel.Size = new System.Drawing.Size(83, 19);
+            this.SupplierLabel.Size = new System.Drawing.Size(221, 45);
             this.SupplierLabel.TabIndex = 22;
             this.SupplierLabel.Text = "Supplier :";
             this.SupplierLabel.Click += new System.EventHandler(this.CategoryButton_Click);
@@ -77,10 +77,9 @@
             // ProductLabel
             // 
             this.ProductLabel.Font = new System.Drawing.Font("Times New Roman", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProductLabel.Location = new System.Drawing.Point(29, 103);
-            this.ProductLabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.ProductLabel.Location = new System.Drawing.Point(77, 246);
             this.ProductLabel.Name = "ProductLabel";
-            this.ProductLabel.Size = new System.Drawing.Size(65, 19);
+            this.ProductLabel.Size = new System.Drawing.Size(173, 45);
             this.ProductLabel.TabIndex = 21;
             this.ProductLabel.Text = "Product :";
             this.ProductLabel.Click += new System.EventHandler(this.OrderLabel_Click);
@@ -89,9 +88,10 @@
             // 
             this.OrderTitle.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OrderTitle.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.OrderTitle.Location = new System.Drawing.Point(1, 4);
+            this.OrderTitle.Location = new System.Drawing.Point(3, 10);
+            this.OrderTitle.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.OrderTitle.Name = "OrderTitle";
-            this.OrderTitle.Size = new System.Drawing.Size(257, 40);
+            this.OrderTitle.Size = new System.Drawing.Size(685, 95);
             this.OrderTitle.TabIndex = 19;
             this.OrderTitle.Text = "New Order Request";
             this.OrderTitle.Click += new System.EventHandler(this.OrderTitle_Click);
@@ -101,10 +101,10 @@
             this.Addbutton.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.Addbutton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Addbutton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Addbutton.Location = new System.Drawing.Point(514, 118);
-            this.Addbutton.Margin = new System.Windows.Forms.Padding(1);
+            this.Addbutton.Location = new System.Drawing.Point(326, 925);
+            this.Addbutton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Addbutton.Name = "Addbutton";
-            this.Addbutton.Size = new System.Drawing.Size(81, 34);
+            this.Addbutton.Size = new System.Drawing.Size(216, 81);
             this.Addbutton.TabIndex = 26;
             this.Addbutton.Text = "Add";
             this.Addbutton.UseVisualStyleBackColor = false;
@@ -113,39 +113,36 @@
             // QtyLabel
             // 
             this.QtyLabel.Font = new System.Drawing.Font("Times New Roman", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QtyLabel.Location = new System.Drawing.Point(28, 244);
-            this.QtyLabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.QtyLabel.Location = new System.Drawing.Point(75, 582);
             this.QtyLabel.Name = "QtyLabel";
-            this.QtyLabel.Size = new System.Drawing.Size(65, 19);
+            this.QtyLabel.Size = new System.Drawing.Size(173, 45);
             this.QtyLabel.TabIndex = 28;
             this.QtyLabel.Text = "Qty :";
             // 
             // UPlabel
             // 
             this.UPlabel.Font = new System.Drawing.Font("Times New Roman", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UPlabel.Location = new System.Drawing.Point(29, 285);
-            this.UPlabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.UPlabel.Location = new System.Drawing.Point(77, 680);
             this.UPlabel.Name = "UPlabel";
-            this.UPlabel.Size = new System.Drawing.Size(83, 19);
+            this.UPlabel.Size = new System.Drawing.Size(221, 45);
             this.UPlabel.TabIndex = 29;
             this.UPlabel.Text = "Unit Price :";
             // 
             // UPbox
             // 
             this.UPbox.Font = new System.Drawing.Font("Times New Roman", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UPbox.Location = new System.Drawing.Point(114, 278);
-            this.UPbox.Margin = new System.Windows.Forms.Padding(1);
+            this.UPbox.Location = new System.Drawing.Point(304, 663);
+            this.UPbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UPbox.Name = "UPbox";
-            this.UPbox.Size = new System.Drawing.Size(118, 29);
+            this.UPbox.Size = new System.Drawing.Size(308, 62);
             this.UPbox.TabIndex = 30;
             // 
             // Datelabel
             // 
             this.Datelabel.Font = new System.Drawing.Font("Times New Roman", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Datelabel.Location = new System.Drawing.Point(360, 25);
-            this.Datelabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.Datelabel.Location = new System.Drawing.Point(960, 60);
             this.Datelabel.Name = "Datelabel";
-            this.Datelabel.Size = new System.Drawing.Size(101, 19);
+            this.Datelabel.Size = new System.Drawing.Size(269, 45);
             this.Datelabel.TabIndex = 31;
             this.Datelabel.Text = "Request Date";
             // 
@@ -153,29 +150,29 @@
             // 
             this.dateTimePicker1.CustomFormat = "MM dd yyyy hh:mm";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(362, 51);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(1);
+            this.dateTimePicker1.Location = new System.Drawing.Point(965, 122);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(115, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(300, 38);
             this.dateTimePicker1.TabIndex = 32;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // amountlabel
             // 
             this.amountlabel.Font = new System.Drawing.Font("Times New Roman", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.amountlabel.Location = new System.Drawing.Point(29, 329);
-            this.amountlabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.amountlabel.Location = new System.Drawing.Point(77, 785);
             this.amountlabel.Name = "amountlabel";
-            this.amountlabel.Size = new System.Drawing.Size(65, 19);
+            this.amountlabel.Size = new System.Drawing.Size(173, 45);
             this.amountlabel.TabIndex = 34;
             this.amountlabel.Text = "Amount : ";
             this.amountlabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // qtynumchoice
             // 
-            this.qtynumchoice.Location = new System.Drawing.Point(114, 244);
+            this.qtynumchoice.Location = new System.Drawing.Point(304, 582);
+            this.qtynumchoice.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.qtynumchoice.Name = "qtynumchoice";
-            this.qtynumchoice.Size = new System.Drawing.Size(120, 20);
+            this.qtynumchoice.Size = new System.Drawing.Size(320, 38);
             this.qtynumchoice.TabIndex = 36;
             this.qtynumchoice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -184,10 +181,10 @@
             this.clearbutton.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.clearbutton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearbutton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.clearbutton.Location = new System.Drawing.Point(32, 388);
-            this.clearbutton.Margin = new System.Windows.Forms.Padding(1);
+            this.clearbutton.Location = new System.Drawing.Point(85, 925);
+            this.clearbutton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.clearbutton.Name = "clearbutton";
-            this.clearbutton.Size = new System.Drawing.Size(81, 34);
+            this.clearbutton.Size = new System.Drawing.Size(216, 81);
             this.clearbutton.TabIndex = 37;
             this.clearbutton.Text = "Clear";
             this.clearbutton.UseVisualStyleBackColor = false;
@@ -196,87 +193,97 @@
             // Descriplabel
             // 
             this.Descriplabel.Font = new System.Drawing.Font("Times New Roman", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Descriplabel.Location = new System.Drawing.Point(28, 152);
-            this.Descriplabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.Descriplabel.Location = new System.Drawing.Point(75, 362);
             this.Descriplabel.Name = "Descriplabel";
-            this.Descriplabel.Size = new System.Drawing.Size(102, 19);
+            this.Descriplabel.Size = new System.Drawing.Size(272, 45);
             this.Descriplabel.TabIndex = 38;
             this.Descriplabel.Text = "Description : ";
             // 
             // amounttxtbox
             // 
             this.amounttxtbox.Font = new System.Drawing.Font("Times New Roman", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.amounttxtbox.Location = new System.Drawing.Point(113, 322);
-            this.amounttxtbox.Margin = new System.Windows.Forms.Padding(1);
+            this.amounttxtbox.Location = new System.Drawing.Point(301, 768);
+            this.amounttxtbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.amounttxtbox.Name = "amounttxtbox";
-            this.amounttxtbox.Size = new System.Drawing.Size(118, 29);
+            this.amounttxtbox.Size = new System.Drawing.Size(308, 62);
             this.amounttxtbox.TabIndex = 20;
             // 
             // Descriptionbox
             // 
             this.Descriptionbox.Font = new System.Drawing.Font("Times New Roman", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Descriptionbox.Location = new System.Drawing.Point(113, 145);
-            this.Descriptionbox.Margin = new System.Windows.Forms.Padding(1);
+            this.Descriptionbox.Location = new System.Drawing.Point(301, 346);
+            this.Descriptionbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Descriptionbox.Name = "Descriptionbox";
-            this.Descriptionbox.Size = new System.Drawing.Size(259, 29);
+            this.Descriptionbox.Size = new System.Drawing.Size(684, 62);
             this.Descriptionbox.TabIndex = 39;
             // 
             // OrderIDRanLabel
             // 
             this.OrderIDRanLabel.Font = new System.Drawing.Font("Times New Roman", 9.900001F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OrderIDRanLabel.Location = new System.Drawing.Point(127, 51);
-            this.OrderIDRanLabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.OrderIDRanLabel.Location = new System.Drawing.Point(339, 122);
             this.OrderIDRanLabel.Name = "OrderIDRanLabel";
-            this.OrderIDRanLabel.Size = new System.Drawing.Size(72, 19);
+            this.OrderIDRanLabel.Size = new System.Drawing.Size(192, 45);
             this.OrderIDRanLabel.TabIndex = 41;
             this.OrderIDRanLabel.Text = "OID: ";
             // 
             // OrderIDLabel
             // 
             this.OrderIDLabel.Font = new System.Drawing.Font("Times New Roman", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OrderIDLabel.Location = new System.Drawing.Point(23, 51);
-            this.OrderIDLabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.OrderIDLabel.Location = new System.Drawing.Point(61, 122);
             this.OrderIDLabel.Name = "OrderIDLabel";
-            this.OrderIDLabel.Size = new System.Drawing.Size(88, 19);
+            this.OrderIDLabel.Size = new System.Drawing.Size(235, 45);
             this.OrderIDLabel.TabIndex = 40;
             this.OrderIDLabel.Text = "Order ID : ";
             // 
             // Productbox
             // 
             this.Productbox.Font = new System.Drawing.Font("Times New Roman", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Productbox.Location = new System.Drawing.Point(113, 96);
-            this.Productbox.Margin = new System.Windows.Forms.Padding(1);
+            this.Productbox.Location = new System.Drawing.Point(301, 229);
+            this.Productbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Productbox.Name = "Productbox";
-            this.Productbox.Size = new System.Drawing.Size(259, 29);
+            this.Productbox.Size = new System.Drawing.Size(684, 62);
             this.Productbox.TabIndex = 42;
             // 
             // skewlabel
             // 
             this.skewlabel.Font = new System.Drawing.Font("Times New Roman", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.skewlabel.Location = new System.Drawing.Point(327, 197);
-            this.skewlabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.skewlabel.Location = new System.Drawing.Point(872, 470);
             this.skewlabel.Name = "skewlabel";
-            this.skewlabel.Size = new System.Drawing.Size(62, 19);
+            this.skewlabel.Size = new System.Drawing.Size(165, 45);
             this.skewlabel.TabIndex = 44;
             this.skewlabel.Text = "Skew :";
             // 
             // skewdroplabel
             // 
             this.skewdroplabel.Font = new System.Drawing.Font("Times New Roman", 9.900001F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.skewdroplabel.Location = new System.Drawing.Point(376, 197);
-            this.skewdroplabel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.skewdroplabel.Location = new System.Drawing.Point(1003, 470);
             this.skewdroplabel.Name = "skewdroplabel";
-            this.skewdroplabel.Size = new System.Drawing.Size(72, 19);
+            this.skewdroplabel.Size = new System.Drawing.Size(192, 45);
             this.skewdroplabel.TabIndex = 45;
             this.skewdroplabel.Text = "Skew:";
             this.skewdroplabel.Click += new System.EventHandler(this.skewdroplabel_Click);
             // 
+            // Editbutton
+            // 
+            this.Editbutton.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.Editbutton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Editbutton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Editbutton.Location = new System.Drawing.Point(574, 925);
+            this.Editbutton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Editbutton.Name = "Editbutton";
+            this.Editbutton.Size = new System.Drawing.Size(216, 81);
+            this.Editbutton.TabIndex = 53;
+            this.Editbutton.Text = "Save Edit";
+            this.Editbutton.UseVisualStyleBackColor = false;
+            this.Editbutton.Click += new System.EventHandler(this.Editbutton_Click);
+            // 
             // OrderForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
-            this.ClientSize = new System.Drawing.Size(602, 448);
+            this.ClientSize = new System.Drawing.Size(1605, 1068);
+            this.Controls.Add(this.Editbutton);
             this.Controls.Add(this.skewdroplabel);
             this.Controls.Add(this.skewlabel);
             this.Controls.Add(this.Productbox);
@@ -298,7 +305,7 @@
             this.Controls.Add(this.ProductLabel);
             this.Controls.Add(this.amounttxtbox);
             this.Controls.Add(this.OrderTitle);
-            this.Margin = new System.Windows.Forms.Padding(1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "OrderForm";
             this.Text = "Add Order";
             this.Load += new System.EventHandler(this.OrderForm_Load);
@@ -309,27 +316,27 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox Supplierbox;
         private System.Windows.Forms.Label SupplierLabel;
         private System.Windows.Forms.Label ProductLabel;
         private System.Windows.Forms.Label OrderTitle;
         private System.Windows.Forms.Label QtyLabel;
         private System.Windows.Forms.Label UPlabel;
-        private System.Windows.Forms.TextBox UPbox;
         private System.Windows.Forms.Label Datelabel;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label amountlabel;
         public System.Windows.Forms.Button Addbutton;
-        private System.Windows.Forms.NumericUpDown qtynumchoice;
         public System.Windows.Forms.Button clearbutton;
         private System.Windows.Forms.Label Descriplabel;
-        private System.Windows.Forms.TextBox amounttxtbox;
-        private System.Windows.Forms.TextBox Descriptionbox;
-        private System.Windows.Forms.Label OrderIDRanLabel;
         private System.Windows.Forms.Label OrderIDLabel;
-        private System.Windows.Forms.TextBox Productbox;
         private System.Windows.Forms.Label skewlabel;
-        private System.Windows.Forms.Label skewdroplabel;
+        public System.Windows.Forms.ComboBox Supplierbox;
+        public System.Windows.Forms.TextBox UPbox;
+        public System.Windows.Forms.DateTimePicker dateTimePicker1;
+        public System.Windows.Forms.NumericUpDown qtynumchoice;
+        public System.Windows.Forms.TextBox amounttxtbox;
+        public System.Windows.Forms.TextBox Descriptionbox;
+        public System.Windows.Forms.Label OrderIDRanLabel;
+        public System.Windows.Forms.TextBox Productbox;
+        public System.Windows.Forms.Label skewdroplabel;
+        private System.Windows.Forms.Button Editbutton;
     }
 }

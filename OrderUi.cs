@@ -17,8 +17,8 @@ namespace ProjectInventory
         //define a list 
         //private List<Product> pendingProducts = new List<Product>();
         //Database connection
-        //SqlConnection con = new SqlConnection(@"Data Source=d0;Initial Catalog=InventoryDB;Integrated Security=True;Encrypt=False");
-        SqlConnection con = new SqlConnection(@"Data Source=BB8\SQLEXPRESS;Initial Catalog=InventoryDB;Integrated Security=True;Encrypt=False");
+        SqlConnection con = new SqlConnection(@"Data Source=d0;Initial Catalog=InventoryDB;Integrated Security=True;Encrypt=False");
+        //SqlConnection con = new SqlConnection(@"Data Source=BB8\SQLEXPRESS;Initial Catalog=InventoryDB;Integrated Security=True;Encrypt=False");
         SqlCommand cmd = new SqlCommand();
         SqlDataReader dr;
         public OrderForm()
@@ -42,7 +42,7 @@ namespace ProjectInventory
             {
             //clear out the supplier box
                 Supplierbox.Items.Clear();
-            con.Open();
+                con.Open();
                 cmd = new SqlCommand("SELECT * FROM Suppliers", con);
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
@@ -201,7 +201,6 @@ namespace ProjectInventory
             qtynumchoice.Value = 0;
             dateTimePicker1.Value = DateTime.Now;
             Descriptionbox.Text = "";
-            
             OrderID();
         }
        
@@ -225,6 +224,37 @@ namespace ProjectInventory
         private void skewdroplabel_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Editbutton_Click(object sender, EventArgs e)
+        {
+            //after approve form request to make an edit, this saves the changes to the database
+            try
+            {
+                con.Open();
+                cmd = new SqlCommand("UPDATE PendingOrders SET product_name = @product_name, p_description = @p_description, supplier_name = @supplier_name, skew_number = @skew_number, qty = @qty, amount_purchased = @amount_purchased, requisition_date = @requisition_date WHERE order_id = @order_id", con);
+                cmd.Parameters.AddWithValue("@order_id", OrderIDRanLabel.Text);
+                cmd.Parameters.AddWithValue("@product_name", Productbox.Text);
+                cmd.Parameters.AddWithValue("@p_description", Descriptionbox.Text);
+                cmd.Parameters.AddWithValue("@supplier_name", Supplierbox.Text);
+                cmd.Parameters.AddWithValue("@skew_number", skewdroplabel.Text);
+                cmd.Parameters.AddWithValue("@qty", qtynumchoice.Value);
+                cmd.Parameters.AddWithValue("@amount_purchased", amounttxtbox.Text);
+                cmd.Parameters.AddWithValue("@requisition_date", dateTimePicker1.Value);
+
+                cmd.ExecuteNonQuery();
+                con.Close();
+                MessageBox.Show("Order Request Updated Successfully", "Edit Order", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+            this.Dispose(); //to close after update
         }
     }
 }

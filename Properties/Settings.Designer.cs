@@ -33,5 +33,16 @@ namespace ProjectInventory.Properties {
                 return ((string)(this["InventoryDBConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=d0;Initial Catalog=InventoryDB;Integrated Security=True;Encrypt=False" +
+            "")]
+        public string InventoryDBConnectionString1 {
+            get {
+                return ((string)(this["InventoryDBConnectionString1"]));
+            }
+        }
     }
 }

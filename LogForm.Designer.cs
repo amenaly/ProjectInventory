@@ -73,6 +73,7 @@
             this.Passtxtbox.Font = new System.Drawing.Font("Times New Roman", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Passtxtbox.Location = new System.Drawing.Point(1064, 462);
             this.Passtxtbox.Name = "Passtxtbox";
+            this.Passtxtbox.PasswordChar = '*';
             this.Passtxtbox.Size = new System.Drawing.Size(393, 62);
             this.Passtxtbox.TabIndex = 3;
             this.Passtxtbox.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
@@ -158,12 +159,12 @@
 
         private System.Windows.Forms.Label UsernameLabel;
         private System.Windows.Forms.Label PasswordLabel;
-        private System.Windows.Forms.TextBox usernametxtbox;
         private System.Windows.Forms.TextBox Passtxtbox;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button LogButton;
         private System.Windows.Forms.Button ClearButton;
         private System.Windows.Forms.Button ExitButton;
         private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TextBox usernametxtbox;
     }
 }
