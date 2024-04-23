@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Data.Entity.Infrastructure.Design.Executor;
 
 namespace ProjectInventory
 {
@@ -118,8 +120,17 @@ namespace ProjectInventory
                     cmd.Parameters.AddWithValue("@approval_date", ApprovalPicker.Value);
                     cmd.ExecuteNonQuery();
 
-                    //NEED TO DO: Update the stock quantity in the database Stock table
-                    //Get the current stock quantity
+                    //NEED TO DO: Update the stock with new order 
+                    //it increments st_product_id by 1 so don't need to insert anything for it
+                    cmd = new SqlCommand("Insert INTO Stock (supp_id, skew_number, product_name, p_desc, quantity) VALUES " +
+                        "(@supp_id, @skew_number, @product_name, @p_desc, @quantity)", con);
+                    
+                    cmd.Parameters.AddWithValue("@supp_id", dgvPending.Rows[e.RowIndex].Cells[4].Value);
+                    cmd.Parameters.AddWithValue("@skew_number", dgvPending.Rows[e.RowIndex].Cells[3].Value);
+                    cmd.Parameters.AddWithValue("@product_name", dgvPending.Rows[e.RowIndex].Cells[1].Value);
+                    cmd.Parameters.AddWithValue("@p_desc", dgvPending.Rows[e.RowIndex].Cells[2].Value);
+                    cmd.Parameters.AddWithValue("@quantity", dgvPending.Rows[e.RowIndex].Cells[5].Value);
+                    cmd.ExecuteNonQuery();
 
                     //delete the selected row
                     cmd = new SqlCommand("DELETE FROM PendingOrders WHERE order_id = @order_id", con);

@@ -12,6 +12,7 @@ namespace ProjectInventory
 {
     public partial class DashboardMenu : Form
     {
+        //display the information of the user that is logged in
         public string username { get { return usernamelabel.Text; } }
         public DashboardMenu()
         {
@@ -20,6 +21,7 @@ namespace ProjectInventory
         }
 
         private Form activeForm = null;
+        //create a function to open the child form
         private void openChildForm(Form childForm)
         {
             if (activeForm != null)
@@ -71,7 +73,11 @@ namespace ProjectInventory
 
         private void HomeButton_Click(object sender, EventArgs e)
         {
-
+            //bring back to the dashboard
+            if (activeForm != null)
+                activeForm.Close();
+            openChildForm(new HomeUpdate());
+            hideSubMenu();
         }
 
         private void ProductButton_Click(object sender, EventArgs e)
@@ -105,8 +111,16 @@ namespace ProjectInventory
 
         private void PendingButton_Click(object sender, EventArgs e)
         {
-            openChildForm(new ApproveForm());
-            hideSubMenu();
+            //prevent sales emp from opening 
+            if(rolelabel.Text == "Administrator")
+            {
+                openChildForm(new ApproveForm());
+                hideSubMenu();
+            }
+            else
+            {
+                MessageBox.Show("You are not authorized to access this page", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void AvailableButton_Click(object sender, EventArgs e)
@@ -117,17 +131,25 @@ namespace ProjectInventory
 
         private void ReportButton_Click(object sender, EventArgs e)
         {
-            openChildForm(new Reports());
-            hideSubMenu();
+            if (rolelabel.Text == "Administrator")
+            {
+                openChildForm(new Reports());
+                hideSubMenu();
+            }
+            else
+            {
+                MessageBox.Show("You are not authorized to access this page", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
-
         private void LogOffButton_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Are you sure you want to log out?", "Log out", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
+                //error: triggering the pop up welcome message 
                 this.Hide();
                 LogForm login = new LogForm();
-                login.Show();
+                login.ShowDialog(); //change from show to showdialog to prevent that error 
             }
         }
 

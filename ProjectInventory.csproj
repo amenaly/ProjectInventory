@@ -104,6 +104,12 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="HomeUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeUpdate.Designer.cs">
+      <DependentUpon>HomeUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="InventoryDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -156,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeUpdate.resx">
+      <DependentUpon>HomeUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrderUi.resx">
       <DependentUpon>OrderUi.cs</DependentUpon>

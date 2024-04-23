@@ -34,13 +34,15 @@ namespace ProjectInventory
             try
             {
                 con.Open();
+                //retreieve employee name that logged in 
+
                 cmd = new SqlCommand("SELECT * FROM [User]", con);
-                cmd.Parameters.AddWithValue("@username", logForm.usernametxtbox.Text);
+                cmd.Parameters.AddWithValue("@name", logForm.usernametxtbox.Text);
                 dr = cmd.ExecuteReader();
 
                 if (dr.Read())
                 {
-                    employee = dr["username"].ToString();
+                    employee = dr["name"].ToString();
 
                 }
                 dr.Close();
@@ -71,6 +73,9 @@ namespace ProjectInventory
         {
             try
             {
+                //retreieve employee name 
+                string employee = LoadEmployee(sql);           
+
                 ReportDataSource rptDataSource;
                 this.reportViewer1.LocalReport.ReportPath = @"Reports\OrdersReport.rdlc";
                 this.reportViewer1.LocalReport.DataSources.Clear();
@@ -85,18 +90,15 @@ namespace ProjectInventory
 
                 //assign the parameters to the report
                 ReportParameter pFactory = new ReportParameter("pFactory", "St. Mary's Factory");
-                ReportParameter pEmployee = new ReportParameter("pEmployee", sql);
-                ReportParameter pOrderId = new ReportParameter("pOrderId", "test");
-                ReportParameter pUnitPrice = new ReportParameter("pUnitPrice", "test");
-
+                ReportParameter pEmployee = new ReportParameter("pEmployee", employee);
             
-                reportViewer1.LocalReport.SetParameters(new ReportParameter[] { pFactory, pEmployee, pOrderId, pUnitPrice});
+                reportViewer1.LocalReport.SetParameters(new ReportParameter[] { pFactory, pEmployee});
 
                 rptDataSource = new ReportDataSource("DataSet1", ds.Tables["FinalOrders"]);
                 reportViewer1.LocalReport.DataSources.Add(rptDataSource);
                 reportViewer1.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout);
                 reportViewer1.ZoomMode = ZoomMode.Percent;
-                reportViewer1.ZoomPercent = 30;
+                reportViewer1.ZoomPercent = 100;
 
             }
             catch (Exception ex)

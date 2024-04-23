@@ -122,7 +122,8 @@ namespace ProjectInventory
                             this.Hide();
                             DashboardMenu dash = new DashboardMenu();
                             dash.usernamelabel.Text = _username;
-                            dash.NameLabel.Text = _name + " | " + _role;
+                            dash.NameLabel.Text = _name + " | ";
+                            dash.rolelabel.Text = _role;
                             dash.ShowDialog();
                         }
                         if(_role == "Administrator")
@@ -133,7 +134,8 @@ namespace ProjectInventory
                             this.Hide();
                             DashboardMenu dash = new DashboardMenu();
                             dash.usernamelabel.Text = _username;
-                            dash.NameLabel.Text = _name + " | " + _role;
+                            dash.NameLabel.Text = _name + " | ";
+                            dash.rolelabel.Text = _role;
                             dash.ShowDialog();
                         }
 
@@ -152,16 +154,6 @@ namespace ProjectInventory
                 {
                     MessageBox.Show(ex.Message);
                 }
-
-
-                //MessageBox.Show("Login Successful", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //usernametxtbox.Clear();
-                //Passtxtbox.Clear();
-                // this.Hide();
-                //DashboardMenu dash = new DashboardMenu();
-                //dash.usernamelabel.Text = usernametxtbox.Text;
-                //dash.Show();
-
             }
 
 

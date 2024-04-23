@@ -74,9 +74,10 @@ namespace ProjectInventory
             {
                 IDlabel.Text = dgvStock.Rows[e.RowIndex].Cells[0].Value.ToString();
                 SkewNumLabel.Text = dgvStock.Rows[e.RowIndex].Cells[2].Value.ToString();
-                ProdDescLabel.Text = dgvStock.Rows[e.RowIndex].Cells[3].Value.ToString() + " " +
-                    dgvStock.Rows[e.RowIndex].Cells[4].Value.ToString() + " " +
-                    dgvStock.Rows[e.RowIndex].Cells[5].Value.ToString();
+                pnameselect.Text = dgvStock.Rows[e.RowIndex].Cells[3].Value.ToString();
+                ProdDescLabel.Text = dgvStock.Rows[e.RowIndex].Cells[4].Value.ToString();
+                //dgvStock.Rows[e.RowIndex].Cells[4].Value.ToString() + " " +
+                //dgvStock.Rows[e.RowIndex].Cells[5].Value.ToString();
 
               _qty = int.TryParse(dgvStock.Rows[e.RowIndex].Cells[6].Value.ToString(), out _qty) ? _qty : 0;
                 
@@ -140,6 +141,11 @@ namespace ProjectInventory
         }
 
         private void SkewNumLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ProdDescLabel_Click(object sender, EventArgs e)
         {
 
         }

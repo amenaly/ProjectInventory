@@ -39,7 +39,6 @@
             this.CurrentButton = new System.Windows.Forms.Button();
             this.ProductsPanel = new System.Windows.Forms.Panel();
             this.SupplierButton = new System.Windows.Forms.Button();
-            this.Skewbutton = new System.Windows.Forms.Button();
             this.ProductButton = new System.Windows.Forms.Button();
             this.HomeButton = new System.Windows.Forms.Button();
             this.LogOnPanel = new System.Windows.Forms.Panel();
@@ -49,6 +48,7 @@
             this.TitlePane = new System.Windows.Forms.Panel();
             this.TitleMessage = new System.Windows.Forms.Label();
             this.ParentPanel = new System.Windows.Forms.Panel();
+            this.rolelabel = new System.Windows.Forms.Label();
             this.SideMenu.SuspendLayout();
             this.CurrentPanel.SuspendLayout();
             this.ProductsPanel.SuspendLayout();
@@ -80,7 +80,7 @@
             this.LogOffButton.BackColor = System.Drawing.Color.IndianRed;
             this.LogOffButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.LogOffButton.ForeColor = System.Drawing.Color.White;
-            this.LogOffButton.Location = new System.Drawing.Point(0, 1458);
+            this.LogOffButton.Location = new System.Drawing.Point(0, 1328);
             this.LogOffButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LogOffButton.Name = "LogOffButton";
             this.LogOffButton.Size = new System.Drawing.Size(483, 122);
@@ -95,7 +95,7 @@
             this.ReportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ReportButton.Image = ((System.Drawing.Image)(resources.GetObject("ReportButton.Image")));
             this.ReportButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ReportButton.Location = new System.Drawing.Point(0, 1336);
+            this.ReportButton.Location = new System.Drawing.Point(0, 1206);
             this.ReportButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ReportButton.Name = "ReportButton";
             this.ReportButton.Size = new System.Drawing.Size(483, 122);
@@ -110,7 +110,7 @@
             this.CurrentPanel.Controls.Add(this.PendingButton);
             this.CurrentPanel.Controls.Add(this.AddButton);
             this.CurrentPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.CurrentPanel.Location = new System.Drawing.Point(0, 974);
+            this.CurrentPanel.Location = new System.Drawing.Point(0, 844);
             this.CurrentPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CurrentPanel.Name = "CurrentPanel";
             this.CurrentPanel.Size = new System.Drawing.Size(483, 362);
@@ -170,7 +170,7 @@
             this.CurrentButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CurrentButton.Image = ((System.Drawing.Image)(resources.GetObject("CurrentButton.Image")));
             this.CurrentButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CurrentButton.Location = new System.Drawing.Point(0, 848);
+            this.CurrentButton.Location = new System.Drawing.Point(0, 718);
             this.CurrentButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CurrentButton.Name = "CurrentButton";
             this.CurrentButton.Size = new System.Drawing.Size(483, 126);
@@ -182,12 +182,11 @@
             // ProductsPanel
             // 
             this.ProductsPanel.Controls.Add(this.SupplierButton);
-            this.ProductsPanel.Controls.Add(this.Skewbutton);
             this.ProductsPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.ProductsPanel.Location = new System.Drawing.Point(0, 593);
             this.ProductsPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ProductsPanel.Name = "ProductsPanel";
-            this.ProductsPanel.Size = new System.Drawing.Size(483, 255);
+            this.ProductsPanel.Size = new System.Drawing.Size(483, 125);
             this.ProductsPanel.TabIndex = 2;
             // 
             // SupplierButton
@@ -197,7 +196,7 @@
             this.SupplierButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SupplierButton.Image = ((System.Drawing.Image)(resources.GetObject("SupplierButton.Image")));
             this.SupplierButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SupplierButton.Location = new System.Drawing.Point(0, 126);
+            this.SupplierButton.Location = new System.Drawing.Point(0, 0);
             this.SupplierButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SupplierButton.Name = "SupplierButton";
             this.SupplierButton.Size = new System.Drawing.Size(483, 126);
@@ -205,22 +204,6 @@
             this.SupplierButton.Text = "Suppliers";
             this.SupplierButton.UseVisualStyleBackColor = false;
             this.SupplierButton.Click += new System.EventHandler(this.SupplierButton_Click);
-            // 
-            // Skewbutton
-            // 
-            this.Skewbutton.BackColor = System.Drawing.Color.SteelBlue;
-            this.Skewbutton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Skewbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Skewbutton.Image = ((System.Drawing.Image)(resources.GetObject("Skewbutton.Image")));
-            this.Skewbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Skewbutton.Location = new System.Drawing.Point(0, 0);
-            this.Skewbutton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Skewbutton.Name = "Skewbutton";
-            this.Skewbutton.Size = new System.Drawing.Size(483, 126);
-            this.Skewbutton.TabIndex = 0;
-            this.Skewbutton.Text = "Skew";
-            this.Skewbutton.UseVisualStyleBackColor = false;
-            this.Skewbutton.Click += new System.EventHandler(this.Skewbutton_Click);
             // 
             // ProductButton
             // 
@@ -289,16 +272,17 @@
             // 
             this.NameLabel.AutoSize = true;
             this.NameLabel.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameLabel.Location = new System.Drawing.Point(1277, 55);
+            this.NameLabel.Location = new System.Drawing.Point(694, 63);
             this.NameLabel.Name = "NameLabel";
-            this.NameLabel.Size = new System.Drawing.Size(82, 55);
+            this.NameLabel.Size = new System.Drawing.Size(145, 55);
             this.NameLabel.TabIndex = 1;
-            this.NameLabel.Text = "Ln";
+            this.NameLabel.Text = "Name";
             this.NameLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // TitlePane
             // 
             this.TitlePane.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.TitlePane.Controls.Add(this.rolelabel);
             this.TitlePane.Controls.Add(this.TitleMessage);
             this.TitlePane.Controls.Add(this.NameLabel);
             this.TitlePane.Dock = System.Windows.Forms.DockStyle.Top;
@@ -313,7 +297,7 @@
             // 
             this.TitleMessage.AutoSize = true;
             this.TitleMessage.Font = new System.Drawing.Font("Times New Roman", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TitleMessage.Location = new System.Drawing.Point(819, 55);
+            this.TitleMessage.Location = new System.Drawing.Point(292, 65);
             this.TitleMessage.Name = "TitleMessage";
             this.TitleMessage.Size = new System.Drawing.Size(375, 53);
             this.TitleMessage.TabIndex = 0;
@@ -329,6 +313,16 @@
             this.ParentPanel.Size = new System.Drawing.Size(1776, 1159);
             this.ParentPanel.TabIndex = 2;
             this.ParentPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ParentPanel_Paint);
+            // 
+            // rolelabel
+            // 
+            this.rolelabel.AutoSize = true;
+            this.rolelabel.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rolelabel.Location = new System.Drawing.Point(1001, 65);
+            this.rolelabel.Name = "rolelabel";
+            this.rolelabel.Size = new System.Drawing.Size(117, 55);
+            this.rolelabel.TabIndex = 2;
+            this.rolelabel.Text = "Role";
             // 
             // DashboardMenu
             // 
@@ -364,7 +358,6 @@
         private System.Windows.Forms.Button ProductButton;
         private System.Windows.Forms.Button HomeButton;
         private System.Windows.Forms.Panel ProductsPanel;
-        private System.Windows.Forms.Button Skewbutton;
         private System.Windows.Forms.Panel CurrentPanel;
         private System.Windows.Forms.Button CurrentButton;
         private System.Windows.Forms.Button SupplierButton;
@@ -376,5 +369,6 @@
         public System.Windows.Forms.Label usernamelabel;
         public System.Windows.Forms.Label NameLabel;
         private System.Windows.Forms.Panel ParentPanel;
+        public System.Windows.Forms.Label rolelabel;
     }
 }

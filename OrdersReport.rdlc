@@ -684,7 +684,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Total</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -991,8 +993,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>1.5in</Top>
-            <Left>0.17167in</Left>
+            <Top>1.95in</Top>
             <Height>0.75in</Height>
             <Width>9in</Width>
             <Style>
@@ -1018,8 +1019,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>pFactory</rd:DefaultName>
-            <Left>0.17167in</Left>
-            <Height>0.47445in</Height>
+            <Top>0.225in</Top>
+            <Height>0.32862in</Height>
             <Width>9in</Width>
             <ZIndex>1</ZIndex>
             <Style>
@@ -1047,8 +1048,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox26</rd:DefaultName>
-            <Top>1.10223in</Top>
-            <Left>0.17167in</Left>
+            <Top>1.11612in</Top>
             <Height>0.25in</Height>
             <Width>0.75833in</Width>
             <ZIndex>2</ZIndex>
@@ -1077,8 +1077,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>pEmployee</rd:DefaultName>
-            <Top>1.10223in</Top>
-            <Left>0.95778in</Left>
+            <Top>1.11612in</Top>
+            <Left>0.82777in</Left>
             <Height>0.25in</Height>
             <Width>1in</Width>
             <ZIndex>3</ZIndex>
@@ -1107,8 +1107,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox32</rd:DefaultName>
-            <Top>3.2675in</Top>
-            <Left>4.17167in</Left>
+            <Top>3.05917in</Top>
             <Height>0.25in</Height>
             <Width>1.48333in</Width>
             <ZIndex>4</ZIndex>
@@ -1137,8 +1136,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox33</rd:DefaultName>
-            <Top>0.62306in</Top>
-            <Left>7.60917in</Left>
+            <Top>0.79667in</Top>
             <Height>0.25in</Height>
             <Width>1in</Width>
             <ZIndex>5</ZIndex>
@@ -1153,13 +1151,13 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>3.6875in</Height>
+        <Height>4.87917in</Height>
         <Style />
       </Body>
       <Width>9.41417in</Width>
       <Page>
-        <PageHeight>11.69in</PageHeight>
-        <PageWidth>8.27in</PageWidth>
+        <PageHeight>9in</PageHeight>
+        <PageWidth>11.69in</PageWidth>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
         <TopMargin>1in</TopMargin>

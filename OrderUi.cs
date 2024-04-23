@@ -67,7 +67,7 @@ namespace ProjectInventory
                 SqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    UPbox.Text = dr["unit_price"].ToString();
+                    //UPbox.Text = dr["unit_price"].ToString();
                     skewdroplabel.Text = dr["skew"].ToString();
                     
                 }
@@ -81,20 +81,7 @@ namespace ProjectInventory
                 con.Close();
             }
         }
-        //Load Product drop down
-        //public void LoadProduct()
-        //{
-            //clear out the product box
-            //productbox.Items.Clear();
-            //con.Open();
-            //cmd = new SqlCommand("SELECT * FROM Stock", con);
-            //dr = cmd.ExecuteReader();
-            //while (dr.Read())
-            //{
-                //productbox.Items.Add(dr["product_name"].ToString());
-            //}
-            //con.Close();
-        //}
+       
 
        private void AddtoPending()
         {

@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CurrentStock));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.SkewNumLabel = new System.Windows.Forms.Label();
             this.ProdDescLabel = new System.Windows.Forms.Label();
             this.IDlabel = new System.Windows.Forms.Label();
@@ -56,6 +56,8 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Select = new System.Windows.Forms.DataGridViewImageColumn();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.PNameLabel = new System.Windows.Forms.Label();
+            this.pnameselect = new System.Windows.Forms.Label();
             this.TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.bottompanel.SuspendLayout();
@@ -76,11 +78,12 @@
             // ProdDescLabel
             // 
             this.ProdDescLabel.Font = new System.Drawing.Font("Times New Roman", 9.900001F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProdDescLabel.Location = new System.Drawing.Point(283, 229);
+            this.ProdDescLabel.Location = new System.Drawing.Point(695, 229);
             this.ProdDescLabel.Name = "ProdDescLabel";
-            this.ProdDescLabel.Size = new System.Drawing.Size(293, 45);
+            this.ProdDescLabel.Size = new System.Drawing.Size(574, 45);
             this.ProdDescLabel.TabIndex = 9;
             this.ProdDescLabel.Text = "PDesc:";
+            this.ProdDescLabel.Click += new System.EventHandler(this.ProdDescLabel_Click);
             // 
             // IDlabel
             // 
@@ -95,7 +98,7 @@
             // descriptionlabel
             // 
             this.descriptionlabel.Font = new System.Drawing.Font("Times New Roman", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.descriptionlabel.Location = new System.Drawing.Point(29, 229);
+            this.descriptionlabel.Location = new System.Drawing.Point(493, 229);
             this.descriptionlabel.Name = "descriptionlabel";
             this.descriptionlabel.Size = new System.Drawing.Size(235, 45);
             this.descriptionlabel.TabIndex = 7;
@@ -133,8 +136,8 @@
             // 
             // TopPanel
             // 
-            this.TopPanel.Controls.Add(this.Searchlabel);
-            this.TopPanel.Controls.Add(this.SearchtxtBox);
+            this.TopPanel.Controls.Add(this.pnameselect);
+            this.TopPanel.Controls.Add(this.PNameLabel);
             this.TopPanel.Controls.Add(this.Addbutton);
             this.TopPanel.Controls.Add(this.SkewNumLabel);
             this.TopPanel.Controls.Add(this.ProdDescLabel);
@@ -157,7 +160,7 @@
             this.Searchlabel.Font = new System.Drawing.Font("Times New Roman", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Searchlabel.Image = ((System.Drawing.Image)(resources.GetObject("Searchlabel.Image")));
             this.Searchlabel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Searchlabel.Location = new System.Drawing.Point(581, 224);
+            this.Searchlabel.Location = new System.Drawing.Point(810, 35);
             this.Searchlabel.Name = "Searchlabel";
             this.Searchlabel.Size = new System.Drawing.Size(216, 45);
             this.Searchlabel.TabIndex = 64;
@@ -168,7 +171,7 @@
             // 
             this.SearchtxtBox.Font = new System.Drawing.Font("Times New Roman", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SearchtxtBox.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.SearchtxtBox.Location = new System.Drawing.Point(805, 227);
+            this.SearchtxtBox.Location = new System.Drawing.Point(1076, 33);
             this.SearchtxtBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SearchtxtBox.Multiline = true;
             this.SearchtxtBox.Name = "SearchtxtBox";
@@ -204,6 +207,8 @@
             // bottompanel
             // 
             this.bottompanel.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.bottompanel.Controls.Add(this.SearchtxtBox);
+            this.bottompanel.Controls.Add(this.Searchlabel);
             this.bottompanel.Controls.Add(this.pictureBox2);
             this.bottompanel.Controls.Add(this.BottomLabel);
             this.bottompanel.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -240,14 +245,14 @@
             this.dgvStock.AllowUserToAddRows = false;
             this.dgvStock.BackgroundColor = System.Drawing.Color.White;
             this.dgvStock.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.CornflowerBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvStock.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.CornflowerBlue;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Times New Roman", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvStock.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvStock.ColumnHeadersHeight = 58;
             this.dgvStock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvStock.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -258,14 +263,14 @@
             this.Column5,
             this.Column6,
             this.Select});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvStock.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Times New Roman", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvStock.DefaultCellStyle = dataGridViewCellStyle8;
             this.dgvStock.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvStock.EnableHeadersVisualStyles = false;
             this.dgvStock.Location = new System.Drawing.Point(0, 315);
@@ -335,6 +340,24 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // PNameLabel
+            // 
+            this.PNameLabel.Font = new System.Drawing.Font("Times New Roman", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PNameLabel.Location = new System.Drawing.Point(30, 229);
+            this.PNameLabel.Name = "PNameLabel";
+            this.PNameLabel.Size = new System.Drawing.Size(174, 45);
+            this.PNameLabel.TabIndex = 64;
+            this.PNameLabel.Text = "Product : ";
+            // 
+            // pnameselect
+            // 
+            this.pnameselect.Font = new System.Drawing.Font("Times New Roman", 9.900001F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnameselect.Location = new System.Drawing.Point(219, 229);
+            this.pnameselect.Name = "pnameselect";
+            this.pnameselect.Size = new System.Drawing.Size(225, 45);
+            this.pnameselect.TabIndex = 65;
+            this.pnameselect.Text = "PName:";
+            // 
             // CurrentStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
@@ -383,5 +406,7 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Button Addbutton;
         private System.Windows.Forms.Label Searchlabel;
+        private System.Windows.Forms.Label pnameselect;
+        private System.Windows.Forms.Label PNameLabel;
     }
 }
